@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roshani Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5ad413634f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- ----------------------------------------------Header---------------------------------------------------- -->
+    <div id="header">
+      <div class="container">
+        <nav class="nav">
+          <img
+            src="Images/logo.avif"
+            class="logo"
+            width="180px"
+            height="50px"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hi, I am <span>Roshani</span><br />
+            Chaurasiya from <span>India</span>.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------About------------------------------------------------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/About-me.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <ul>
+              <li>
+                I specialize in frontend development, particularly focusing on React to create seamless and visually captivating user interfaces.
+              </li>
+              <li>
+                With a solid foundation in HTML, CSS, and JavaScript, I take pride in crafting elegant and efficient solutions for web applications.
+              </li>
+             
+              <li>
+                Continuously staying abreast of emerging technologies and industry best practices, I am committed to delivering high-quality work that exceeds expectations.
+              </li>
+              <li>
+                My goal is to contribute my expertise to projects that not only meet but surpass user needs, elevating the standards of frontend development in the process.
+              </li>
+            </ul>           
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>JavaScript</span><br />Dynamic behavior and
+                  interactivity
+                </li>
+                <li><span>React</span><br />Component-based UI development</li>
+                <li><span>CSS</span><br />Styling and layout for web pages</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - Present</span><br />Nextpage IT Solution Pvt Ltd
+                  - React Developer
+                </li>
+                <li>
+                  <span>2022 - 2022</span><br />Writ Labs
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2018 - 2021</span><br />B.Sc - Udai Pratap College
+                </li>
+                <li><span>2017 - 2018</span><br />XII - State Board</li>
+                <li><span>2015 - 2016</span><br />X - State Board</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------------------------Services-------------------------------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React Developer</h2>
+            <p>
+              React developers are front-end developers who build modern-day
+              UI components to improvise application performance. They leverage
+              their knowledge about JavaScript, HTML, CSS and work closely with
+              testers, designers, web designers, and project managers to create
+              a robust and effective application.
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <h2>Frontend Developer</h2>
+            <p>
+              Frontend developers are computer programmers who specialize in
+              website design. Front end developer duties include determining the
+              structure and design of web pages, striking a balance between
+              functional and aesthetic design.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>UI Developer</h2>
+            <p>
+              A UI and front-end web developer is responsible for applying
+              interactive and visual design principles on websites and web
+              applications for a positive and cohesive user experience. These
+              developers use HTML, CSS, and other design tools to achieve
+              responsive designs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------------------------Portfolio--------------------------------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/Ucode.png" />
+            <div class="layer">
+              <h3>Ucode Project</h3>
+              <p>
+                Kids participate in live online lessons, interacting in real
+                time with an experienced teacher and a small group of students.
+              </p>
+              <a href="https://ucode.com"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/Home.jpg" />
+            <div class="layer">
+              <h3>Curry Cares Project</h3>
+              <p>
+                Curry Cares! is a program created by Roofing by Curry to provide
+                families that have fallen on hard times the new roof they need.
+              </p>
+              <a href="https://currycares.com"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/Calculator.jpg" />
+            <div class="layer">
+              <h3>Calculator</h3>
+              <p>
+                I have created my own Calculator for calculating. So here we can
+                calculate everything.
+              </p>
+              <a href="https://roshanichaurasiya.github.io/MyCalculator/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------Contact---------------------------------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              roshni.chaurasiya2111@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 888-190-1986</p>
+            <p>
+              <a href="https://www.linkedin.com/in/roshani-chaurasiya-4318532a4"
+                ><i class="fa-brands fa-linkedin"></i>Linkedin</a
+              >
+            </p>
+            <a href="Images/Roshani Resume.pdf" download class="btn btn2">
+              Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-regular fa-copyright"></i> 2024 Portfolio. All
+          Rights Reserved.
+        </p>
+      </div>
+    </div>
+    <!-- -------------------------------------------------Script---------------------------------------------------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
