@@ -15,30 +15,31 @@
   <body>
     <!-- ----------------------------------------------Header---------------------------------------------------- -->
     <div id="header">
+      <nav class="nav">
+        <img
+          src="Images/logo.jpeg"
+          class="logo"
+          width="180px"
+          height="50px"
+        />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
       <div class="container">
-        <nav class="nav">
-          <img
-            src="Images/logo.avif"
-            class="logo"
-            width="180px"
-            height="50px"
-          />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
         <div class="header-text">
-          <p>Software Developer</p>
           <h1>
             Hi, I am <span>Roshani</span><br />
-            Chaurasiya from <span>India</span>.
+            and I am a passionate
+            <!-- Element to contain animated typing -->
           </h1>
+          <h1><span id="element"></span></h1>
         </div>
       </div>
     </div>
@@ -98,7 +99,7 @@
             <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                  <span>2022 - Present</span><br />Nextpage IT Solution Pvt Ltd
+                  <span>2022 - Present</span><br />Nextpage IT Solutions Pvt Ltd.
                   - React Developer
                 </li>
                 <li><span>2022 - 2022</span><br />Function Up</li>
@@ -208,16 +209,16 @@
             <div class="layer">
               <h3>Tic Tac Toe Game</h3>
               <p>
-                Designed with a sleek, modern interface, this project highlights the ease
-                and enjoyment of a classic game. Whether you're playing against friends or
-                honing your strategy.
+                Designed with a sleek, modern interface, this project highlights
+                the ease and enjoyment of a classic game. Whether you're playing
+                against friends or honing your strategy.
               </p>
               <a href="https://ros-tic-tac-toe.netlify.app/">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
-          
+
           <div class="work">
             <img src="Images/Design.jpeg" />
             <div class="layer">
@@ -329,6 +330,14 @@
       function closemenu() {
         sidemeu.style.right = "-200px";
       }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["React Developer", "Frontend Developer", "UI Developer","HTML Developer"],
+        typeSpeed: 90,
+      });
     </script>
   </body>
 </html>

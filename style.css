@@ -13,7 +13,7 @@ body {
 }
 #header {
   width: 100%;
-  height: 130vh;
+  height: 100vh;
   background-image: url(Images/Banner.jpg);
   background-size: cover;
   background-position: center;
@@ -26,6 +26,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 30px;
 }
 .logo {
   width: 140px;
@@ -55,6 +56,7 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
   width: 100%;
+  color: #1ebe5b;
 }
 .header-text {
   text-align: center;
@@ -63,7 +65,7 @@ nav ul li a:hover::after {
   font-size: 30px;
   background: #0f0d0d;
   border-radius: 10px;
-  margin: 20% 12%;
+  margin: 14% 12%;
   opacity: 0.8;
   padding: 10px;
 }
@@ -94,6 +96,7 @@ nav ul li a:hover::after {
 .about-col-1 img {
   width: 100%;
   border-radius: 15px;
+  height: 100%;
 }
 
 .about-col-2 {
@@ -211,6 +214,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   display: block;
   transition: 0.5s;
+  height: 33vh;
 }
 .layer {
   width: 100%;
@@ -293,6 +297,9 @@ nav ul li a:hover::after {
 }
 .contact-right form {
   width: 100%;
+}
+.btn.btn2:hover{
+  background-color: #1cf36e;
 }
 form input,
 form textarea {
